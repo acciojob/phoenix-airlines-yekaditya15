@@ -7,8 +7,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(() => ({
   button: {
-    marginTop: 10
-  }
+    marginTop: 10,
+  },
 }));
 
 const Confirmation = () => {
@@ -17,10 +17,12 @@ const Confirmation = () => {
 
   return (
     <>
-      <Typography
-        variant="body2"
-        color="textPrimary"
-      >{`Thank you for the Booking. Click the below button to return to home page`}</Typography>
+      <Typography variant="body2" color="textPrimary">
+        <p>
+          Thank you for the Booking. Click the below button to return to home
+          page
+        </p>
+      </Typography>
       <Button
         variant="outlined"
         color="primary"
@@ -33,7 +35,7 @@ const Confirmation = () => {
 
 Confirmation.propTypes = {
   history: PropTypes.object,
-  classes: PropTypes.object
+  classes: PropTypes.object,
 };
 
 export default Confirmation;
