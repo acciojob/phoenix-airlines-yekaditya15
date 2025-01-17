@@ -17,12 +17,9 @@ const Confirmation = () => {
 
   return (
     <>
-      <Typography variant="body2" color="textPrimary">
-        <p>
-          Thank you for the Booking. Click the below button to return to home
-          page
-        </p>
-      </Typography>
+      <p className="confirmation">
+        Thank you for the Booking. Click the below button to return to home page
+      </p>
       <Button
         variant="outlined"
         color="primary"
